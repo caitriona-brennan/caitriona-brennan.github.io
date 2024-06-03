@@ -1,0 +1,311 @@
+@media(min-width:200px){
+  div.container-1 {
+    text-align: left;
+    display:flex;
+    padding-left:5%;
+}
+}
+
+@media(min-width:200px){
+body{
+  color:rgb(22, 22, 22);
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-variation-settings:"wdth" 100;
+  background-color: rgb(245, 244, 240);
+  text-align: left;
+  font-size:2vw;
+}
+}
+
+@media(min-width:1000px){
+body{
+  color:rgb(36, 36, 36);
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-variation-settings:"wdth" 100;
+  background-color: rgb(245, 244, 240);
+  text-align: left;
+  font-size:1.5vw;
+}
+}
+
+h1{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 2vw;
+  padding-top:4%;
+  color: rgb(239, 213, 48);
+}
+
+h2{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  font-size: 2vw;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(240, 237, 225);
+}
+
+a{
+  text-decoration:none;
+}
+
+.footer a{
+  color: rgb(245, 244, 240);
+}
+
+.header a{
+  color:rgb(22, 22, 22);
+}
+
+
+a:hover{
+  color:rgb(239, 213, 48);;
+}
+
+.list{
+  display: inline-block;
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.box-1{
+    flex:4;
+    order:1;
+    margin: 2%;
+}
+.box-2{
+  flex:2;
+  order:2;
+  margin: 2%;
+}
+.box-3{
+  flex:2;
+  order:3;
+  margin: 2%;
+}
+.box-4{
+  flex:1;
+  order:4;
+  margin: 2%;
+}
+
+.header{
+  width:100%; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:1000;
+}
+
+@media(min-width:200px){
+.logo{
+  width:30px;
+  height:auto;
+}}
+@media(min-width:550px){
+.logo{
+  width:50px;
+  height:auto;
+}}
+
+
+.links-container {
+  margin-left: auto; 
+  margin-right:5%;
+  text-align: right;
+}
+.links-container a {
+  padding: 10px;
+  width: 100%;
+}
+
+.footer{
+  color: rgb(245, 244, 240);
+  width:100%; 
+  text-align:right;
+  position:fixed;
+  bottom:0;
+  right:0;
+  background-color: rgb(22, 22, 22);
+  padding-right: 2%;
+  padding-left: 2%;
+  z-index: 1000;
+}
+
+/* New CSS for layering images */
+
+@media(min-width:200px){
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+  }
+  }
+  @media(min-width:500px){
+    .image-container {
+      width: 100%;
+      height: auto;
+      margin-top: 0%;
+    }
+    }
+
+@media(min-width:200px){
+.image-container img {
+  position: sticky;
+  width: 30%; /* Adjust as needed */
+  height: auto;
+}
+}
+@media(min-width:500px){
+  .image-container img {
+    position: sticky;
+    width: 20%; /* Adjust as needed */
+    height: auto;
+  }
+}
+
+@media(min-width:200px){
+  .image1 {
+    z-index: 3;
+    left: 65%; /* Adjust as needed */
+    scale: 80%;
+    transform: translateY(-120%);
+  }
+  }
+  @media(min-width:500px){
+    .image1 {
+      z-index: 3;
+      left: 65%; /* Adjust as needed */
+      scale: 80%;
+      transform: translateY(-150%);
+    }
+    }
+
+
+@media(min-width:200px){
+  .image2 {
+    z-index: 2;
+    left: 75%; /* Adjust as needed */
+    scale: 110%;
+    transform: translateY(-100%); /* Fine-tune vertical alignment */
+  }
+  }
+  @media(min-width:500px){
+    .image2 {
+      z-index: 2;
+      left: 75%; /* Adjust as needed */
+      scale: 110%;
+      transform: translateY(-190%); /* Fine-tune vertical alignment */
+    }
+    }
+
+
+@media(min-width:200px){
+.image3 {
+  z-index: 1;
+  left: 80%; /* Adjust as needed */
+  scale: 70%;
+  transform: translateY(-100%);
+}
+}
+@media(min-width:500px){
+  .image3 {
+    z-index: 1;
+    left: 80%; /* Adjust as needed */
+    scale: 70%;
+    transform: translateY(-80%);
+  }
+  }
+
+
+/* titles */
+
+
+  .image-container-title {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom:30%;
+  }
+
+      .image-container-title img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+      }
+  
+      .titleimage1 {
+        z-index: 3;
+        scale: 40%;
+        top: 0; 
+      }
+  
+      .titleimage2 {
+        z-index: 2;
+        scale: 30%;
+        right: 20%;
+      }
+
+      .titleimage3 {
+        z-index: 1;
+        scale:10%;
+        transform: translateY(-430%);
+        left:15%;
+      }
+
+      .titleimage2-tanger {
+        z-index: 2;
+        scale: 20%;
+        right: 20%;
+        transform: translateY(-80%);
+      }
+
+      .titleimage3-tanger {
+        z-index: 1;
+        scale:30%;
+        left:15%;
+        transform: translateY(10%);
+      }
+
+      .titleimage2-irishpub {
+        z-index: 2;
+        scale: 30%;
+        right: 20%;
+        transform: translateY(-110%);
+      }
+
+      .titleimage3-irishpub {
+        z-index: 1;
+        scale:30%;
+        left:15%;
+        transform: translateY(-70%);
+      }
+
+      .responsive-image {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; 
+        height: auto;   
+        flex: 1 1 auto;
+      }
+    
+      
