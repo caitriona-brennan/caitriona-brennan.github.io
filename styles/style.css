@@ -223,7 +223,7 @@ a:hover{
     z-index: 1;
     left: 80%; /* Adjust as needed */
     scale: 70%;
-    transform: translateY(-80%);
+    transform: translateY(-70%);
   }
   }
 
