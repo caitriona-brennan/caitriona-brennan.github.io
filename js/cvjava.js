@@ -52,4 +52,5 @@ function prevSlide(carouselId) {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide('carousel1', 0);
     showSlide('carousel2', 0);
+    showSlide('carousel3', 0);
 });
