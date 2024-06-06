@@ -22,29 +22,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-let currentIndex = 0;
+//carousel
+let carousels = {};
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
-    if (index >= slides.length) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = slides.length - 1;
-    } else {
-        currentIndex = index;
+function showSlide(carouselId, index) {
+    const slides = document.querySelectorAll(`#${carouselId} .carousel-item`);
+    if (!carousels[carouselId]) {
+        carousels[carouselId] = { currentIndex: 0 };
     }
-    const offset = -currentIndex * 100;
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+    if (index >= slides.length) {
+        carousels[carouselId].currentIndex = 0;
+    } else if (index < 0) {
+        carousels[carouselId].currentIndex = slides.length - 1;
+    } else {
+        carousels[carouselId].currentIndex = index;
+    }
+    const offset = -carousels[carouselId].currentIndex * 100;
+    document.querySelector(`#${carouselId} .carousel-inner`).style.transform = `translateX(${offset}%)`;
 }
 
-function nextSlide() {
-    showSlide(currentIndex + 1);
+function nextSlide(carouselId) {
+    showSlide(carouselId, carousels[carouselId].currentIndex + 1);
 }
 
-function prevSlide() {
-    showSlide(currentIndex - 1);
+function prevSlide(carouselId) {
+    showSlide(carouselId, carousels[carouselId].currentIndex - 1);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    showSlide(currentIndex);
+    showSlide('carousel1', 0);
+    showSlide('carousel2', 0);
 });
