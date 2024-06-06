@@ -299,5 +299,48 @@ a:hover{
         height: auto;   
         flex: 1 1 auto;
       }
+
+/* carousel */
+      .carousel {
+        position: relative;
+        width: 80%;
+        overflow: hidden;
+        margin:auto;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        display: block;
+    }
+    
+    .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }      
+      
     
       
