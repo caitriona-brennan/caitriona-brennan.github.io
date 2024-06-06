@@ -1,5 +1,3 @@
-
-
 //change logo 
 document.addEventListener('DOMContentLoaded', () => {
     const targets = document.querySelectorAll('.target');
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//carousel
 let currentIndex = 0;
 
 function showSlide(index) {
