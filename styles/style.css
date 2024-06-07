@@ -244,6 +244,32 @@ a:hover{
       }
       }
 
+        @media(min-width:500px){
+          .image5 {
+            z-index: 2;
+            left: 55%; /* Adjust as needed */
+            scale: 110%;
+            transform: translateY(-350%); /* Fine-tune vertical alignment */
+          }
+          }
+
+          @media(min-width:200px){
+            .image6 {
+              z-index: 1;
+              left: 65%; /* Adjust as needed */
+              scale: 70%;
+              transform: translateY(-140%);
+            }
+            }
+            @media(min-width:500px){
+              .image6 {
+                z-index: 1;
+                left: 65%; /* Adjust as needed */
+                scale: 70%;
+                transform: translateY(-140%);
+              }
+              }
+
 /* titles */
 
 
