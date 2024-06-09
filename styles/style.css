@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 @media(min-width:200px){
   div.container-1 {
     text-align: left;
     display:flex;
     padding-left:5%;
     padding-right:5%;
+    max-width:100%;
 }
 }
 
@@ -26,7 +31,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 300;
   font-variation-settings:"wdth" 100;
-  background-color: rgb(245, 244, 240);
+  background-color: #f5f4f0;
   text-align: left;
 }
 }
@@ -36,7 +41,9 @@ h1{
   font-optical-sizing: auto;
   font-weight: 800;
   padding-top:4%;
-  color: #2413DF;
+}
+.yellowtext{
+  color: #ddc210;
 }
 
 
@@ -62,9 +69,8 @@ a{
   color:rgb(22, 22, 22);
 }
 
-
 a:hover{
-  color: #2413DF;
+  color:rgb(239, 213, 48);;
 }
 
 .list{
@@ -75,10 +81,16 @@ a:hover{
   padding: 0;
 }
 
+
 .box-1{
     flex:4;
     order:1;
     margin: 2%;
+}
+.box-1-1{
+  flex:1;
+  order:1;
+  margin: 2%;
 }
 .box-2{
   flex:2;
@@ -119,7 +131,6 @@ a:hover{
   height:auto;
 }}
 
-
 .links-container {
   margin-left: auto; 
   margin-right:5%;
@@ -143,7 +154,7 @@ a:hover{
   z-index: 1000;
 }
 
-/* New CSS for layering images */
+/* layering images */
 
 @media(min-width:200px){
   .image-container {
@@ -210,7 +221,6 @@ a:hover{
     }
     }
 
-
 @media(min-width:200px){
 .image3 {
   z-index: 1;
@@ -227,6 +237,7 @@ a:hover{
     transform: translateY(-70%);
   }
   }
+
   @media(min-width:200px){
     .image4 {
       z-index: 1;
@@ -280,12 +291,12 @@ a:hover{
 
 /* titles */
 
-
   .image-container-title {
     position: relative;
     width: 100%;
     height: auto;
     margin-bottom:30%;
+    display: flex;
   }
 
       .image-container-title img {
@@ -317,7 +328,7 @@ a:hover{
         z-index: 2;
         scale: 20%;
         right: 20%;
-        transform: translateY(-70%);
+        transform: translateY(-80%);
       }
 
       .titleimage3-tanger {
@@ -348,7 +359,7 @@ a:hover{
         height: auto;   
         flex: 1 1 auto;
       }
-
+    
 /* carousel */
       .carousel {
         position: relative;
