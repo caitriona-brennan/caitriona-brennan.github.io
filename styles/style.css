@@ -41,9 +41,7 @@ h1{
   font-optical-sizing: auto;
   font-weight: 800;
   padding-top:4%;
-}
-.yellowtext{
-  color: #ddc210;
+  color: #2413DF;
 }
 
 
@@ -70,7 +68,7 @@ a{
 }
 
 a:hover{
-  color:rgb(239, 213, 48);;
+  color:#2413DF;
 }
 
 .list{
