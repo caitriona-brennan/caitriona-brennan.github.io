@@ -5,10 +5,11 @@
 @media(min-width:200px){
   .container-1 {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     flex-wrap: nowrap;
-    padding: 5%;
+    padding: 3%;
   }
 }
 
@@ -42,6 +43,11 @@ h1{
   font-weight: 800;
   padding-top:4%;
   color: #C51E3A;
+}
+
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 
@@ -79,10 +85,13 @@ a:hover{
   padding: 0;
 }
 
-
 .box-1{
-    flex:1;
+  flex:2;
 }
+.box-2{
+  flex:1;
+}
+
 
 
 .header{
@@ -92,8 +101,8 @@ a:hover{
   left: 0;
   padding-top: 2%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:flex-start;
+  align-items: flex-start;
   z-index:1000;
 }
 
@@ -138,6 +147,9 @@ a:hover{
     flex: 1;
     position: relative;
     height: auto;
+    display: flex;
+    justify-content: center;  /* Centers the images horizontally */
+    align-items: center; 
   }
   }
 
@@ -145,7 +157,7 @@ a:hover{
 @media(min-width:200px){
 .image-container img {
   position: relative;
-  max-width: 100%;
+  width: 80%;
 }
 }
 
@@ -153,8 +165,7 @@ a:hover{
 .image1 {
   position: absolute;
   z-index: 1;
-  left: -15%;
-  padding-top: 20%;
+  margin-top: -5%;
   transform: scale(0.8);
   transition: transform 0.3s ease;
 }
@@ -169,6 +180,7 @@ a:hover{
   position: absolute;
   z-index: 2;
   left: -5%;
+  margin-top: -15%;
   transform: scale(0.7);
   transition: transform 0.3s ease;
 }
@@ -176,7 +188,7 @@ a:hover{
   position: absolute;
   z-index: 3;
   left: 25%;
-   margin-top: -25%;
+  margin-top: -45%;
   transform: scale(0.4);
   transition: transform 0.3s ease;
 }
