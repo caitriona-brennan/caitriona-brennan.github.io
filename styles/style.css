@@ -200,7 +200,7 @@ a:hover{
 
 .middle-image .image-wrapper {
   position: relative; /* override absolute */
-  margin-right: 5%;
+  margin-right: 0%;
 }
 
 .middle-image img {
