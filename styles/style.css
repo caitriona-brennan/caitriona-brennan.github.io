@@ -235,6 +235,12 @@ a:hover{
 
 /* titles */
 
+.titleimage1 {
+        z-index: 3;
+        scale: 40%;
+        top: 0; 
+      }
+
   .image-container-title {
     position: relative;
     width: 100%;
