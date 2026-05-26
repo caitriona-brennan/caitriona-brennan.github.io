@@ -59,6 +59,7 @@ font-weight: 800;
 
   padding-top: 4%;
   margin-bottom: 0;
+  margin-top: 5%;
   color: #000;
 }
 
@@ -253,7 +254,7 @@ a:hover{
     justify-content: center;  /* Centers the images horizontally */
     align-items: center;      /* Centers the images vertically */
     gap: 2rem;                /* Space between images */
-    width: 80%;               /* Adjust width as needed */
+    width: 60%;               /* Adjust width as needed */
     margin: 0 auto;           /* Centers the flex container horizontally */
     margin-bottom: 5%;
   }
@@ -275,40 +276,6 @@ a:hover{
     transition: transform 0.3s ease;
   }
   
-      .titleimage1 {
-        z-index: 3;
-        scale: 40%;
-        top: 0; 
-      }
-  
-      .titleimage2 {
-        z-index: 2;
-        scale: 30%;
-        right: 20%;
-      }
-
-      .titleimage3 {
-        z-index: 1;
-        scale:10%;
-        transform: translateY(-430%);
-        left:15%;
-      }
-      
-      .titleimage-lyceum {
-        z-index: 2;
-        scale: 50%;
-        left: 10%; 
-        transform: translateY(-60%);
-        opacity: 0.7;
-      }
-
-      .titleimage1-lyceum {
-        z-index: 1;
-        scale:35%;
-        right: 25%;
-        transform: translateY(-100%);
-        opacity: 0.8;
-      }
 
       .responsive-image {
         justify-content: center;
